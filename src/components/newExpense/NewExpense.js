@@ -12,7 +12,7 @@ export const NewExpense = ({ addExpenseHandler }) => {
     <div
       style={{
         backgroundColor: "#AD9BE9",
-        width: "50%",
+        width: "100%",
         padding: "30px",
         textAlign: "center",
         borderRadius: "20px",

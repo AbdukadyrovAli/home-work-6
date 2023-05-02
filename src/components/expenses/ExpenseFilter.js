@@ -1,10 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import './ExpenseFilter.css'
 
 export const ExpenseFilter = (props) => {
   return (
-    <div className="div" >
+    <Conteiner>
       <label style={{ fontSize: "24px", color: "#fff", fontWeight: "600" }}>
         Фильтровать по году
       </label>
@@ -17,11 +16,9 @@ export const ExpenseFilter = (props) => {
         <option value="2021">2021</option>
         <option value="2020">2020</option>
       </StyledSelect>
-    </div>
+    </Conteiner>
   );
 };
-
-
 
 const StyledSelect = styled.select`
   height: 35px;
@@ -43,4 +40,12 @@ const BtnStyle = styled.button`
     background-color: #fff;
     color: #242222;
   }
+`;
+
+const Conteiner = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
 `;
